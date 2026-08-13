@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Saber Mais - Estudos Bíblicos</title>
+</head>
+
+<body class="pagina-servicos">
+
+    <!-- CABEÇALHO -->
+    <div class="cabecalho">
+        <img src="./img/ouvido.jpeg" alt="Logotipo Ouvindo a Voz de Deus" />
+        <a href="index.html">home</a>
+        <a href="javascript:void(0)" onclick="mostraform()">fale Conosco</a>
+    </div>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <div class="container-servicos">
+        <div class="caixa-conteudo">
+            <h2>📖 Como funcionam os nossos Estudos Bíblicos?</h2>
+            <p class="subtitulo">Aprenda a Palavra de Deus no seu ritmo, diretamente no seu celular ou computador.</p>
+
+            <div class="bloco-destaque">
+                <h3>💡 O tema principal: <span>Ouvindo a Voz de Deus</span></h3>
+                <p>Nós temos diversos estudos disponíveis, mas o nosso foco principal é ensinar como ouvir a voz de Deus
+                    e compreender a Sua vontade para a sua vida.</p>
+            </div>
+
+            <div class="lista-vantagens">
+                <div class="item-vantagem">
+                    <strong>📄 Material 100% em PDF:</strong>
+                    <p>Você não precisa comprar nenhum livro ou apostila física. Enviamos todo o material diretamente em
+                        arquivo PDF.</p>
+                </div>
+
+                <div class="item-vantagem">
+                    <strong>🎁 Totalmente Gratuito:</strong>
+                    <p>Todos os estudos são disponibilizados sem nenhum custo para você fortalecer sua fé.</p>
+                </div>
+
+                <div class="item-vantagem">
+                    <strong>📱 No seu WhatsApp ou E-mail:</strong>
+                    <p>Assim que solicitar, o estudo é enviado no seu privado para você ler e estudar onde e quando
+                        quiser.</p>
+                </div>
+            </div>
+
+            <!-- BOTÃO DE AÇÃO PARA ABRIR O FORMULÁRIO -->
+            <button type="button" class="btn-solicitar-estudo" onclick="mostraform()">
+                Quero Receber o Estudo em PDF
+            </button>
+        </div>
+    </div>
+
+    <!-- FORMULÁRIO FALE CONOSCO (Com envio de e-mail integrado) -->
+    <div class="meu-formulario">
+        <!-- Cole o seu código do Formspree no atributo action abaixo -->
+        <form id="formulario-contato" action="https://formspree.io/f/SEU_CODIGO_AQUI" method="POST">
+            <h2>Fale Conosco</h2>
+            <input type="text" name="nome" placeholder="Seu Nome" required />
+            <input type="email" name="email" placeholder="Seu E-mail" required />
+            <textarea name="mensagem" placeholder="Olá! Gostaria de receber o estudo em PDF Ouvindo a Voz de Deus."
+                rows="4" required></textarea>
+
+            <button type="submit">ENVIAR</button>
+            <button type="button" onclick="fecharForm()"
+                style="background-color: #666; margin-top: 8px;">FECHAR</button>
+        </form>
+    </div>
+
+    <!-- MÁSCARA ESCURA DO FORMULÁRIO -->
+    <div class="mascara-meu-formulario" onclick="fecharForm()"></div>
+
+    <!-- BOTÃO FLUTUANTE DO WHATSAPP -->
+    <a class="link-whatsapp" href="https://wa.me/5582988699255?text=Eu%20gostaria%20de%20fazer%20esse%20estudo"
+        target="_blank">
+        <img src="./img/whatsapp.png" alt="WhatsApp" />
+    </a>
+
+    <!-- SCRIPT DA PÁGINA -->
+    <script src="script.js"></script>
+</body>
+
+</html>

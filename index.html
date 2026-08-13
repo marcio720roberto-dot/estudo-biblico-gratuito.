@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Estudo Bíblico Gratuito</title>
+</head>
+
+<body>
+
+    <!-- CABEÇALHO COM OS 3 LINKS -->
+    <div class="cabecalho">
+        <img src="./img/ouvido.jpeg" alt="Logotipo Ouvindo a Voz de Deus" />
+        <a href="index.html">home</a>
+        <a href="javascript:void(0)" onclick="mostraform()">fale Conosco</a>
+        <a href="nossos-servicos.html">saber mais um pouco</a>
+    </div>
+
+
+    <div class="container-principal">
+
+        <!-- VÍDEO DE FUNDO -->
+        <video autoplay loop muted class="video-fundo">
+            <source src="./img/video.mp4" type="video/mp4">
+        </video>
+
+        <div class="conteudo-esquerda" style="width: 100%; max-width: 100%;">
+
+            <!-- IMAGEM COM TAMANHO FIXO REDUZIDO -->
+            <img src="./img/logo.jpeg" alt="ESTUDO BÍBLICO"
+                style="width: 200px !important; height: auto !important; display: block; margin-bottom: 15px;" />
+
+            <!-- TÍTULO BRANCO -->
+            <h2
+                style="color: #ffffff !important; font-size: 26px !important; font-weight: normal !important; margin-bottom: 10px;">
+                Bem-vindo!</h2>
+
+            <!-- PARÁGRAFO 1 -->
+            <p
+                style="color: #ffffff !important; font-weight: 100 !important; font-size: 14px !important; line-height: 1.6 !important; margin-bottom: 10px;">
+                Somos um espaço dedicado a quem deseja estudar a Bíblia e conhecer melhor a Palavra de Deus.
+            </p>
+
+            <!-- PARÁGRAFO 2 -->
+            <p
+                style="color: #ffffff !important; font-weight: 100 !important; font-size: 14px !important; line-height: 1.6 !important; margin-bottom: 15px;">
+                Oferecemos estudos bíblicos gratuitos e de qualidade. Quer começar? É só explorar o site!
+            </p>
+
+            <button type="button" class="btn-quero-participar"
+                style="background-color: #c82333; color: #ffffff; padding: 10px 20px; border: none;"
+                onclick="mostraform()">
+                Quero Participar
+            </button>
+        </div>
+
+        <!-- LADO DIREITO: IMAGEM DA BÍBLIA -->
+        <div class="conteudo-direita">
+            <img src="./img/estudio.jpeg" alt="Bíblia Sagrada" class="img-biblia-sagrada" />
+        </div>
+
+    </div>
+
+    <div class="meu-formulario">
+        <form id="formulario-contato" action="https://formspree.io/f/xwlelggw" method="POST">
+            <input type="text" name="nome" placeholder="Seu Nome" required>
+            <input type="email" name="email" placeholder="Seu E-mail" required>
+            <textarea name="mensagem" placeholder="Sua Mensagem" rows="3" required></textarea>
+            <button type="submit" class="btn-enviar-form">ENVIAR</button>
+        </form>
+    </div>
+
+    <!-- MÁSCARA ESCURA DO FORMULÁRIO -->
+    <div class="mascara-meu-formulario" onclick="fecharForm()"></div>
+
+    <a class="link-whatsapp"
+        href="https://wa.me/5582988699255?text=Olá!%20Quero%20participar%20do%20Estudo%20Bíblico%20Gratuito."
+        target="_blank">
+        <img src="./img/whatsapp.png" alt="WhatsApp" />
+    </a>
+
+    <form id="formulario-contato" action="https://formspree.io/f/xwlelggw" method="POST">
+
+        <script src="script.js"></script>
+</body>
+
+</html>
